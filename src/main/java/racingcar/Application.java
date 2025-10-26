@@ -1,7 +1,6 @@
 package racingcar;
 
 import camp.nextstep.edu.missionutils.Console;
-import camp.nextstep.edu.missionutils.Randoms;
 
 public class Application {
     public static void main(String[] args) {
@@ -10,5 +9,7 @@ public class Application {
         String input = Console.readLine();
         Cars cars = new Cars(input);
 
+        System.out.println("시도할 횟수는 몇 회인가요?");
+        Integer count = Console.readLine();
     }
 }
