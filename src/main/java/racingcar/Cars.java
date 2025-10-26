@@ -9,6 +9,8 @@ public class Cars {
     private final Integer[] position;
 
     public Cars(String name) {
+        name = name.replace(" ","");
+
         String separator = ",";
         this.carName = name.split(separator);
         this.position = new Integer[carName.length];
