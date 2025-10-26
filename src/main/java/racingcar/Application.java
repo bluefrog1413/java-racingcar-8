@@ -16,5 +16,7 @@ public class Application {
         System.out.println("실행 결과");
         RacingStart racingStart = new RacingStart(Integer.parseInt(count));
         racingStart.racing(cars);
+
+        cars.finalWinner();
     }
 }
