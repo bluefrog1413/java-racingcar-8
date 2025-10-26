@@ -10,6 +10,11 @@ public class Application {
         Cars cars = new Cars(input);
 
         System.out.println("시도할 횟수는 몇 회인가요?");
-        Integer count = Console.readLine();
+        String count = Console.readLine();
+        System.out.println();
+
+        System.out.println("실행 결과");
+        RacingStart racingStart = new RacingStart(Integer.parseInt(count));
+        racingStart.racing(cars);
     }
 }
